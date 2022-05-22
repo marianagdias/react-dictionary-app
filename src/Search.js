@@ -25,8 +25,19 @@ export default function Search() {
   return (
     <div className="Search">
       <form onSubmit={handleSearch}>
-        <input type="search" autoFocus={true} placeholder="Write a word" />
-        <input type="submit" value="Search" onChange={updateKeyword} />
+        <input
+          type="search"
+          autoFocus={true}
+          placeholder="Write a word"
+          className="search-bar form form-control"
+        />
+
+        <input
+          type="submit"
+          value="Search"
+          onChange={updateKeyword}
+          className="btn btn-dark"
+        />
       </form>
       <Results data={results} />
     </div>

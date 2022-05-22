@@ -1,0 +1,9 @@
+.Search .search-bar {
+  width: 300px;
+  display: inline-block;
+  margin: 20px auto;
+}
+
+.Search .btn {
+  margin-left: 10px;
+}
