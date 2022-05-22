@@ -5,6 +5,7 @@ export default function Search() {
   const [keyword, setKeyword] = useState(null);
   function handleSearch(event) {
     event.preventDefault();
+    alert(keyword);
   }
 
   function updateKeyword(event) {
