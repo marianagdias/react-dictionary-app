@@ -30,14 +30,10 @@ export default function Search() {
           autoFocus={true}
           placeholder="Write a word"
           className="search-bar form form-control"
+          onChange={updateKeyword}
         />
 
-        <input
-          type="submit"
-          value="Search"
-          onChange={updateKeyword}
-          className="btn btn-dark"
-        />
+        <input type="submit" value="Search" className="btn btn-dark" />
       </form>
       <Results data={results} />
     </div>
