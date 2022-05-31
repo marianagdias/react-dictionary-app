@@ -9,7 +9,12 @@ export default function Meaning(props) {
           <div key={index}>
             <h3>{meanings.partOfSpeech}</h3>
             <p>
-              <strong>Synonyms: {meanings.synonyms}</strong>
+              <strong>
+                Synonyms:{" "}
+                {meanings.synonyms.map(function (synonyms) {
+                  return <span> {synonyms} </span>;
+                })}
+              </strong>
             </p>
             {meanings.definitions.map(function (definition, index) {
               return (
