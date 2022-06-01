@@ -1,9 +1,25 @@
 .App {
   text-align: center;
   font-family: "Plus Jakarta Sans", sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .App h1 {
   font-size: 3rem;
   padding-top: 20px;
+}
+
+.App footer {
+  color: #8e8d8d;
+  margin: 20px 0 30px;
+}
+
+.App a {
+  color: #85b7fe;
+  text-decoration: none;
+}
+
+.App a:hover {
+  text-decoration: underline;
 }
