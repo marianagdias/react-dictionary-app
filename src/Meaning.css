@@ -1,5 +1,10 @@
+.Meaning {
+  text-align: left;
+}
+
 .Meaning h3 {
-  font-size: 20px;
+  font-size: 22px;
+  margin-bottom: 10px;
 }
 
 .Meaning p {
@@ -12,4 +17,17 @@
 
 .Meaning .content {
   margin-bottom: 50px;
+}
+
+.Meaning .synonym {
+  background-color: #85b7fe;
+  color: white;
+  margin: 0 10px;
+  line-height: 3;
+  padding: 8px 14px;
+  border-radius: 15px;
+}
+
+.Meaning .example {
+  color: #85b7fe;
 }
