@@ -5,22 +5,22 @@ export default function Meaning(props) {
   return (
     <div className="Meaning container">
       <h3 className="row">{props.meaning.partOfSpeech}</h3>
-      <strong>
-        {" "}
-        <p className="row synonyms">
-          <div className="col-md-2">Synonyms:</div>
+      {props.meaning.synonyms && (
+        <div className="row synonyms">
+          <div className="col-md-2">
+            <strong>Synonyms:</strong>
+          </div>
           <div className="col-md-9">
             {props.meaning.synonyms.map(function (synonyms, index) {
               return (
-                <span className="synonym" key={index}>
-                  {" "}
+                <strong className="synonym" key={index}>
                   {synonyms}{" "}
-                </span>
+                </strong>
               );
             })}
           </div>
-        </p>
-      </strong>
+        </div>
+      )}
       {props.meaning.definitions.map(function (definition, index) {
         if (definition.example) {
           return (
