@@ -10,12 +10,18 @@ export default function Images(props) {
             if (index <= 5) {
               return (
                 <div className="col-lg">
-                  <img
-                    className="img-fluid"
-                    width="200px"
-                    src={photos.src.landscape}
-                    alt={photos.alt}
-                  />
+                  <a
+                    href={photos.src.original}
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <img
+                      className="img-fluid"
+                      width="200px"
+                      src={photos.src.landscape}
+                      alt={photos.alt}
+                    />
+                  </a>
                 </div>
               );
             } else {
